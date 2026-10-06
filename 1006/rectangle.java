@@ -49,4 +49,9 @@ class Rectangle extends Shape {
 		System.out.println("Height: " + height);
 		System.out.println("Width: " + width);
 	}
+	
+	@Override
+	public String fileFormat() {
+		return "R";
+	}
 }

@@ -13,13 +13,16 @@ class shapeApp {
 		//Circle circ = app.readCircleFromKeyboard();
 		//circ.draw();
 		
-		ShapeStorage storage = new ShapeStorage("data.txt");
+		Shape[] shapes = new ShapeStorage("data.txt");
+		for(int i=0; shapes.length; i++) {
+			i.draw();
+		}
 		
 		
 		try {
 			storage.readShapes();
-			storage.WriteShapes("igen");
-			storage.readShapes();
+			//storage.WriteShapes("igen");
+			//storage.readShapes();
 		} catch(IOException e) {
 			e.printStackTrace();
 			System.err.print("File error");
