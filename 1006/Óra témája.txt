@@ -1,0 +1,3 @@
+Fájlkezelés
+Hibakezelés
+Bekérés billentyűzetről
